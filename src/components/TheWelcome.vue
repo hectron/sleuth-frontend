@@ -9,7 +9,13 @@ import DataBrokers from "./DataBrokers.vue";
 </script>
 
 <template>
-  <DataBrokers/>
+  <WelcomeItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Data Brokers</template>
+    <DataBrokers/>
+  </WelcomeItem>
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
