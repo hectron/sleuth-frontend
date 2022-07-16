@@ -20,8 +20,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <li v-for="broker in brokers">
-    {{ broker }}
-    <a :href="broker.url"> {{ broker.name }} - {{ broker.notes }}</a>
-  </li>
+  <ul>
+    <li v-for="broker in brokers">
+      <a :href="broker.url"> {{ broker.name }} - {{ broker.notes }}</a>
+    </li>
+  </ul>
 </template>
